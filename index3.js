@@ -1,6 +1,3 @@
-// ARRAYS
-let notas=[5,6,7,8,9,8.7,7.3,6.6,0];
-
 let edad=18;
 const NOMBRE="Diego";
 let lenguaje="Javascript";
@@ -60,10 +57,9 @@ function saludar(){
 }
 
 function contar(){
-    // Recorremos Array
-     for (let i = 0; i < notas.length; i++) {
+    for (let i = 0; i < resultado; i++) {
         document.querySelector(".caja").innerHTML += `
-        <div class="cajita">${notas[i]}</div>
+        <div class="cajita">${i}</div>
         `;
     }
 }
