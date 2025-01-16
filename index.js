@@ -23,6 +23,9 @@ let notaMaxima=resultado===10 ? "Has sacado el maximo" : "No has sacado el maxim
 // document.querySelector(".caja").innerHTML=aprobado;//Resultado arriba boton: Has aprobado; La suma de nota1 y nota2 es 10/2=5 ,si da menos de 10 Has suspendido.
 
 // Eventos y funciones
+// Solo selecciona el primer boton de los dos
+document.querySelector("button").addEventListener("click",saludar);
+
 // Para ejecutar funcion no es practico.
 // saludar();
 function saludar(){
