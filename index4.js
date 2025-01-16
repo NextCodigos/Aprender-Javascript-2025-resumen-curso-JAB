@@ -1,14 +1,5 @@
-// ARRAYS de objeto
-let notas=[
-    {
-        nota:7,
-        nombre:"Jab"
-    },
-    {
-        nota:6.5,
-        nombre:"Eva"
-    }
-];
+// ARRAYS
+let notas=[5,6,7,8,9,8.7,7.3,6.6,0];
 
 let edad=18;
 const NOMBRE="Diego";
@@ -72,7 +63,7 @@ function contar(){
     // Recorremos Array
      for (let i = 0; i < notas.length; i++) {
         document.querySelector(".caja").innerHTML += `
-        <div>${notas[i].nombre} Ha sacado ${notas[i].nota}</div>
+        <div class="cajita">${notas[i]}</div>
         `;
     }
 }
