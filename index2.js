@@ -26,9 +26,6 @@ let notaMaxima=resultado===10 ? "Has sacado el maximo" : "No has sacado el maxim
 // Solo selecciona el primer boton de los dos
 // document.querySelector("button").addEventListener("click",saludar);
 
-// Selecciono el 1º boton Minuto 20 video
-// document.querySelectorAll("button")[0].addEventListener("click",contar);
-document.querySelector("button").addEventListener("click",contar);
 // Selecciono el 2º boton
 document.querySelectorAll("button")[1].addEventListener("click",saludar);
 
@@ -54,12 +51,5 @@ function saludar(){
 
     }
     document.querySelector(".caja").innerHTML = mensaje; 
-}
 
-function contar(){
-    for (let i = 0; i < resultado; i++) {
-        document.querySelector(".caja").innerHTML += `
-        <div class="cajita">${i}</div>
-        `;
-    }
 }
