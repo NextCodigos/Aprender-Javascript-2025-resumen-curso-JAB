@@ -3,8 +3,8 @@ const NOMBRE="Diego";
 let lenguaje="Javascript";
 let verdadero=true;
 
-let nota1=9;
-let nota2=9;
+let nota1=8;
+let nota2=8;
 let resultado=(nota1+nota2)/2;
 // let aprobado=resultado>=5;
 // let notaMaxima=resultado===10;
@@ -46,9 +46,7 @@ function saludar(){
     } else if (resultado<9){
         mensaje="Notable";
     } else if (resultado>=9){
-        mensaje =
-          "Sobresaliente<a href='https://www.html6.es'><img src='./Img/rey_incognito.png'></a></a>";
-
+        mensaje="Sobresaliente";
     }
     document.querySelector(".caja").innerHTML = mensaje; 
 
