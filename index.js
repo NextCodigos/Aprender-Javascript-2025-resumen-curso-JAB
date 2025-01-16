@@ -3,8 +3,8 @@ const NOMBRE="Diego";
 let lenguaje="Javascript";
 let verdadero=true;
 
-let nota1=6;
-let nota2=4;
+let nota1=8;
+let nota2=8;
 let resultado=(nota1+nota2)/2;
 // let aprobado=resultado>=5;
 // let notaMaxima=resultado===10;
@@ -32,5 +32,22 @@ document.querySelectorAll("button")[1].addEventListener("click",saludar);
 // Para ejecutar funcion no es practico.
 // saludar();
 function saludar(){
-   document.querySelector(".caja").innerHTML = aprobado; 
+    // CONDICIONALES
+    // insuficiente <5
+    // Suficiente 5 - <7
+    // Notable 7 - <9
+    // Sobresaliente >=9
+    // Solo tiene efectoo dentro de la funcion
+    let mensaje;
+    if(resultado<5){
+        mensaje="Insuficiente";
+    }  else if(resultado<7){
+        mensaje="Suficiente";
+    } else if (resultado<9){
+        mensaje="Notable";
+    } else if (resultado>=9){
+        mensaje="Sobresaliente";
+    }
+    document.querySelector(".caja").innerHTML = mensaje; 
+
 }
