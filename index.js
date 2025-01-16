@@ -24,7 +24,10 @@ let notaMaxima=resultado===10 ? "Has sacado el maximo" : "No has sacado el maxim
 
 // Eventos y funciones
 // Solo selecciona el primer boton de los dos
-document.querySelector("button").addEventListener("click",saludar);
+// document.querySelector("button").addEventListener("click",saludar);
+
+// Selecciono el 2º boton
+document.querySelectorAll("button")[1].addEventListener("click",saludar);
 
 // Para ejecutar funcion no es practico.
 // saludar();
