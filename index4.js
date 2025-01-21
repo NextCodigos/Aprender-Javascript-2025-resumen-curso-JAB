@@ -39,18 +39,18 @@ document.querySelectorAll("button")[1].addEventListener("click",saludar);
 // saludar();
 function saludar(){
     // CONDICIONALES
-    // insuficiente <5
-    // Suficiente 5 - <7
-    // Notable 7 - <9
-    // Sobresaliente >=9
     // Solo tiene efectoo dentro de la funcion
     let mensaje;
+    // insuficiente <5
     if(resultado<5){
         mensaje="Insuficiente";
     }  else if(resultado<7){
+        // Suficiente 5 - <7
         mensaje="Suficiente";
+        // Notable 7 - <9
     } else if (resultado<9){
         mensaje="Notable";
+        // Sobresaliente >=9
     } else if (resultado>=9){
         mensaje =
           "Sobresaliente<a href='https://www.html6.es'><img src='./Img/rey_incognito.png'></a></a>";
